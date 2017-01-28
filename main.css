@@ -7,6 +7,9 @@ body {
     color: #fff;
     background-color: #fff;
 }
+hr {
+  width: 50%;
+}
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 {
