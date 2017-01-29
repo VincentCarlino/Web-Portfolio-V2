@@ -1,37 +1,42 @@
 * {
-  font: 'Helvetica', sans-serif;
+  font-family: serif;
+
 }
 
 body {
     line-height: 1.8;
-    color: #fff;
-    background-color: #fff;
+    color: #565656;
+    background-attachment: scroll;
 }
 hr {
-  width: 50%;
+    width: 50%;
+    font-weight: 600;
+    border: solid 2px #565656;
 }
+
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 {
-    background-color: #fff; /* Green */
-    color: #275dad;
-    margin: 70px;
+    background-color: transparent; /* Green */
+    margin-top: 15%;
+    margin-bottom: 20%;
+    font-size: 120px;
 }
 .bg-2 {
-    background-color: #275dad; /* Dark Blue */
+    background-color: #FE5E54; /* Dark Blue */
     color: #ffffff;
 }
 .bg-3 {
-    background-color: #7fbeeb; /* White */
+    background-color: #bcbcfe; /* White */
     color: #fff;
 }
 .bg-4 {
-    background-color: #564138; /* Black Gray */
+    background-color: #577399; /* Black Gray */
     color: #fff;
 }
 
 .bg-5 {
-  background-color: #ff5a5f;
+  background-color: #495867;
   color: #fff;
 }
 
@@ -44,14 +49,26 @@ p {font-size: 16px;}
     padding-bottom: 70px;
 }
 
-.navbar {
+.navbar{
     background-color: transparent;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
+    margin-right: 20px;
     font-size: 12px;
+    font-weight: 500;
 
 }
+
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #fff !important;
+}
+
+#home {
+    font-size:72px;
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 72px;
 }
