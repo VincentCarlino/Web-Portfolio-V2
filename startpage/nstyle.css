@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+body, a {
+	margin:0;
+	padding:0;
+    background-color: #3d4b62;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+}
+.center-div {
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 105px;
+}
+
+.search {
+   position: absolute;
+    margin: auto;
+    top: -120px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 50px;
+}
+
+.settings-div {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+input[type=text] {
+    background-color: #333c43;
+    color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    font-size: 100%;
+    transition: ease-in-out, width 1s ease-in-out;
+    
+}
+input[type=text]:focus {
+    width: 350px;
+}
+
+/* MAKE DROPDOWN ITEMS SHOW */
+.dropdown:hover .dropdown-menu {display: block;}
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 90%;
+    display: none;
+    margin: 0;
+    list-style: none;
+    width: 90%;
+    padding-top: 7px;
+    padding-left: 0px;
+    color: #eaeaea;
+}
+button1, .drop{
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    cursor: pointer;
+    background: #333c43;
+}
+
+.drop {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+ul {
+    text-align: left;
+}
+
+/* START BUTTONS */
+.dropdown button1 {
+    background: #333c43;
+    border: none;
+    margin: 0;
+    padding: 0.3em 1em;
+}
+.dropdown button4 {
+    background: #333c43;
+    border: none;
+    margin: 0;
+    padding: 0.3em 0.8em;
+}
+/* SINGLE LINK BUTTON  
+.dropdown a {display: block;} */
+/* HOVER BAR ON DROPDOWN LINKS */
+.dropdown a:hover, .settings-div:hover {
+    background: rgb(25, 40, 46);
+    color: #82adf2;
+}
+/* DROPDOWN LINK TEXT */
+#li, a.drop {font-weight: 300;color: #fff;}
+.dropdown {position: relative;display: inline-block;}
