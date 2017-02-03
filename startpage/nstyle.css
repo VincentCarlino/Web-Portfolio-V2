@@ -80,7 +80,7 @@ button1, .drop{
     -webkit-transition-duration: .4s;
     transition-duration: .4s;
     cursor: pointer;
-    background: #333c43;
+    background: #4c5c69;
 }
 
 .drop {
@@ -93,26 +93,24 @@ ul {
     text-align: left;
 }
 
-/* START BUTTONS */
+
 .dropdown button1 {
-    background: #333c43;
+    background: #2b3033;
     border: none;
     margin: 0;
     padding: 0.3em 1em;
 }
 .dropdown button4 {
-    background: #333c43;
+    background: #2b3033;
     border: none;
     margin: 0;
     padding: 0.3em 0.8em;
 }
-/* SINGLE LINK BUTTON  
-.dropdown a {display: block;} */
-/* HOVER BAR ON DROPDOWN LINKS */
+
+
 .dropdown a:hover, .settings-div:hover {
     background: rgb(25, 40, 46);
     color: #82adf2;
 }
-/* DROPDOWN LINK TEXT */
 #li, a.drop {font-weight: 300;color: #fff;}
 .dropdown {position: relative;display: inline-block;}
