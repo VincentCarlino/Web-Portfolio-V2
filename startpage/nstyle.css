@@ -1,16 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url('https://fonts.googleapis.com/css?family=Lato');
 body, a {
 	margin:0;
 	padding:0;
     background-color: #3d4b62;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
+    font-weight: lighter;
 	line-height: 1.5em;
     color: white;
     text-align: center;
-    font-weight: 400;
     text-decoration: none;
 }
+
 .center-div {
     position: absolute;
     margin: auto;
@@ -31,6 +33,13 @@ body, a {
     left: 0;
     width: 95%;
     height: 50px;
+}
+
+
+.mytemp-div {
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 .settings-div {
@@ -56,6 +65,7 @@ input[type=text]:focus {
 /* MAKE DROPDOWN ITEMS SHOW */
 .dropdown:hover .dropdown-menu {display: block;}
 .dropdown .dropdown-menu {
+    font-family: 'Lato', sans-serif;
     position: absolute;
     top: 90%;
     display: none;
