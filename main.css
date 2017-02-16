@@ -1,46 +1,71 @@
 
 
 * {
-  font-family: serif;
+    font-family: "Taviraj";
+    font-weight: 300;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
 
 }
 
 body {
+    background-color: #2D3142;
     line-height: 1.8;
-    color: #565656;
+    color: #fff;
     background-attachment: scroll;
 }
-hr {
+.bg-1 hr {
+    width: 20%;
+    border: solid 1px #fff;
+}
+
+.bg-2 hr {
+    width: 70%;
+    border: solid 2px #2D3142;
+}
+
+#home:hover hr{
     width: 50%;
-    font-weight: 600;
-    border: solid 2px #565656;
+}
+
+#home:hover h3{
+    font-size: 30px;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.startlinks {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 {
-    background-color: transparent; /* Green */
+    background-color: #2D3142;
     margin-top: 15%;
     margin-bottom: 20%;
     font-size: 120px;
 }
 .bg-2 {
-    background-color: #ea756e; /* Dark Blue */
-    color: #ffffff;
-}
-.bg-3 {
-    background-color: #d3d3d3; /* White */
-    color: #fff;
-}
-.bg-4 {
-    background-color: #738093; /* Black Gray */
-    color: #fff;
+    background-color: #fff;
+    color: #666;
 }
 
-.bg-5 {
-  background-color: #495867;
-  color: #fff;
+
+.bg-3 {
+   background-color: #2D3142;
+    color: #eee;
 }
+
+.bg-3 h2, a{
+    color: #d3714d;
+}
+
 
 .col-sm-4 {
   padding: 60px;
@@ -51,19 +76,30 @@ p {font-size: 16px;}
     padding-bottom: 70px;
 }
 
+h4, h3 { 
+    font-family: 'Open sans', sans-serif;
+    
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .navbar{
+    color: #fff;
     background-color: transparent;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     margin-right: 20px;
+    font-family: serif;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 300;
 
 }
 
 .navbar-nav  li a:hover {
-    color: #fff !important;
+    color: #ccc !important;
+    font-size: 14px;
 }
 
 #home {
@@ -71,6 +107,13 @@ p {font-size: 16px;}
 }
 
 h1 {
-    font-family: "Abril Fatface", cursive;
-    font-size: 72px;
+    font-family: "Taviraj", serif;
+    font-weight: 100;
+    font-size: 90px;
 }
+
+a {
+    font-family: "Open sans", sans-serif;
+}
+
+
