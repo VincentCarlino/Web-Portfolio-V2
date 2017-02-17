@@ -3,8 +3,8 @@
 * {
     font-family: "Taviraj";
     font-weight: 300;
-    -webkit-transition-duration: .4s;
-    transition-duration: .4s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
 
 }
 
@@ -54,6 +54,14 @@ p {font-size: 16px;}
 .bg-2 {
     background-color: #fff;
     color: #666;
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.row {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
 }
 
 
