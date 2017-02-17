@@ -5,6 +5,7 @@
     font-weight: 300;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
+    
 
 }
 
@@ -12,7 +13,6 @@
 
 body {
     background-color: #2D3142;
-    line-height: 1.8;
     color: #fff;
     background-attachment: scroll;
 }
@@ -140,5 +140,7 @@ h1 {
 a {
     font-family: "Open sans", sans-serif;
 }
+
+
 
 
