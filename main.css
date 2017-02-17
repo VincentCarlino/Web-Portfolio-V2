@@ -8,6 +8,8 @@
 
 }
 
+
+
 body {
     background-color: #2D3142;
     line-height: 1.8;
@@ -20,8 +22,8 @@ body {
 }
 
 .bg-2 hr {
-    width: 70%;
-    border: solid 2px #2D3142;
+    width: 30%;
+    border: solid 1px #2D3142;
 }
 
 #home:hover hr{
@@ -30,6 +32,10 @@ body {
 
 #home:hover h3{
     font-size: 30px;
+}
+
+.margin {
+    
 }
 
 .row {
@@ -44,7 +50,9 @@ body {
 }
 
 p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+
+.margin {margin-top: 50px;}
+
 .bg-1 {
     background-color: #2D3142;
     margin-top: 15%;
@@ -64,7 +72,6 @@ p {font-size: 16px;}
     
 }
 
-
 .bg-3 {
    background-color: #2D3142;
     color: #eee;
@@ -74,24 +81,34 @@ p {font-size: 16px;}
     color: #d3714d;
 }
 
-
 .col-sm-4 {
-  padding: 60px;
+  padding: 20px;
+    margin-bottom: 30px;
+    
 }
 
 .container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+. bg-1 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
+
+
 h4, h3 { 
     font-family: 'Open sans', sans-serif;
-    
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+h4 {
+    padding-bottom: 30px;
+}
 .navbar{
     color: #fff;
     background-color: transparent;
