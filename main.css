@@ -8,12 +8,16 @@
 
 }
 
+img {
+    border-radius: 2%;
+}
 
 
-body {
+body{
     background-color: #2D3142;
     color: #fff;
     background-attachment: scroll;
+    line-height: 300%;
 }
 .bg-1 hr {
     width: 20%;
@@ -114,6 +118,7 @@ h2 {
 
 h4 {
     padding-bottom: 30px;
+    line-height: 170%;
 }
 .navbar{
     color: #fff;
