@@ -5,7 +5,6 @@
     font-weight: 300;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
-    
 
 }
 
@@ -92,19 +91,26 @@ p {font-size: 16px;}
     padding-bottom: 10px;
 }
 
-. bg-1 .container-fluid {
+.bg-1 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+    margin: 50px;
 }
 
 
 
-h4, h3 { 
+h4, h3, p { 
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+h2 {
+    padding-bottom: 30px
+}
+
+
 
 h4 {
     padding-bottom: 30px;
