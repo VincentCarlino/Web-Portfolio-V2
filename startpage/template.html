@@ -67,12 +67,19 @@
 </div>
 </div>
 <div class="settings-div">
-     <div class="dropdown">
-        <a href="ntemplate.html">
-    <button1>Night</button1>
-    </a>
+    <div class="dropdown">
+        <input style="width: 25px;" type="color" name="base" value="#ff4b4b">
     </div>
-    </div>
+</div>
+    
+<script>
+    const input = document.querySelectorAll('.settings-div input');
+    
+    function update() {
+    document.documentElement.style.setProperty(`--${this.name}`, this.value);
+    }
+    
+    input.forEach(i => i.addEventListener('change', update));</script>
     <div class="mytemp-div">
     <div class="dropdown">
         <a href="startpage.html">

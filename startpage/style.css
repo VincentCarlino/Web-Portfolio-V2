@@ -29,6 +29,13 @@ body, a {
     height: 20px;
 }
 
+
+.mytemp-div {
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 .search {
    position: absolute;
     margin: auto;
