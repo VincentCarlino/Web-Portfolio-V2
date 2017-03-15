@@ -30,11 +30,7 @@ body, a {
 }
 
 
-.mytemp-div {
-    position:absolute;
-    bottom: 10px;
-    left: 10px;
-}
+
 
 .search {
    position: absolute;
@@ -100,5 +96,12 @@ ul {
     background: rgb(25, 40, 46);
     color: var(--base);
 }
+
+.mytemp-div {
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 #li, a.drop {font-weight: 300;color: #fff;}
 .dropdown {position: relative;display: inline-block;}
