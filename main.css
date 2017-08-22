@@ -280,6 +280,7 @@ h4 {
 	.button, .lang, .button:active {
 		min-width: 40%;
 		max-width: 50%;
+		background-color: black;
 	}
 
 	.nav {
