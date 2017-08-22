@@ -1,155 +1,185 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Vincent Carlino | Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Taviraj:100,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid-nav">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-       <span class="glyphicon glyphicon-menu-down"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME </a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#art">ARTWORK</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div id="home" class="container-fluid bg-1 text-center">
-  <h1 class="margin" id="titlepage" style="
-    text-shadow: 3px 2px 2px #d3714d;">VINCENT CARLINO</h1>
-  <hr>
-    <div class="row startlinks">
-   <h3><a href="Resume.pdf" target="_blank">Resume</a>|<a href="https://github.com/vincentcarlino" target="_blank">Github</a></h3>
-   </div>
-</div>
-<div id="about" class="container-fluid bg-2 text-center">
-  <h2 class="margin">About Me</h2>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type='text/javascript' src="script.js"></script>
+	<title>Vincent Carlino | Web Engineer</title>
+	</head>
+	<body id="body">
+	<div id="toggle" onclick="openNav(this)">
+  						<div class="bar1"></div>
+  						<div class="bar2"></div>
+  						<div class="bar3"></div>
+					</div>
+	<div id="overlay">
+		<ul id="overlay-items" >
+			<li><a class='home' href="#">HOME</a></li>
+			<li><a class='about' href="#">ABOUT ME</a></li>
+			<li><a class='project' href="#">PROJECTS</a></li>
+			<li><a class='exp' href="#">EXPERIENCE</a></li>
+			<li><a class='art' href="#">ARTWORK</a></li>
+			<li>
+          <a href="https://github.com/vincentcarlino">GITHUB</a>
+        </li>
+        <li>
+          <a href="Resume.pdf">RESUME</a>
+        </li>
+			</ul>
+	</div>
+		<div id="wrapper">
+		<div class="row">
+		<div class="nav">
+			<ul id="nav-items">
+			<li><a class='home' href="#">HOME</a></li>
+			<li><a class='about' href="#">ABOUT ME</a></li>
+			<li><a class='project' href="#">PROJECTS</a></li>
+			<li><a class='exp' href="#">EXPERIENCE</a></li>
+			<li><a class='art' href="#">ARTWORK</a></li>
+			<li class="small">
+          <a href="https://github.com/vincentcarlino"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="small">
+          <a target=_blank href="Resume.pdf"><i class="fa fa-file-o"></i></a>
+        </li>
+			</ul>
+		</div>
+		</div>
+		<div class="row" id="name">
+		<div class="card">
+		<h1>Vincent Carlino</h1>
+		<h2>Web Engineer
+		</h2>
+		</div>
+		</div>
+		<div class="row">
+		<div id="a" class="card big title">
+		<h3>About Me</h3>
+		<p>Hi! My name is Vincent Carlino. I'm a third-year student at Northeastern University majoring in Computer Science and minoring in Music Recording. I have skills and experience with programming in Java, HTML, CSS, JavaScript, C++, and JQuery, and I recently began to learn SASS. I love computer science because I get a chance to solve problems logically and systematically.</p>
+		<p>I enjoy web development/general front-end development because I like to be able to optimize the experience for a consumer.  I feel that the key to gaining and maintaining customers for a service lies in a high-quality user interface.</p>
+		<div class="flex-container" style="flex-wrap: wrap;">
+		<p class="lang">HTML/CSS</p>
+		<p class="lang">JAVA</p>
+		<p class="lang">JAVASCRIPT</p>
+		<p class="lang">JQUERY</p>
+		<p class="lang">C++</p></div>
+		</div>
+		<div class="card"><img src="images/Me.png"></div>
+		</div>
+		<div class="row">
+		<div id="b" class="card title"><h3>Personal Work</h3></div>
+		</div>
+		<div class="row">
+		<div class="card title"><h2>Startpage</h2></div>
+		<div class="card big"><p>Startpages are HTML files that typically list your most frequently used sites and services. It's common practice to simply run them locally as your homepage for your web browser.  I constructed my own startpage with functional dropdown menus and a base color switcher using native JavaScript in early 2017. This project acted as my introduction to web-design and HTML/CSS and JavaScript. Since then, I've continued to improve my startpage so it now includes more polished animations and visuals. </p><br>
+		<div class="flex-container">
+		<p class="lang">HTML/CSS</p>
+		<p class="lang">JS</p></div></div>
+		<div class="card">
+		<div class="flex-container" style="flex-direction: column;">
+		<a class="button" href=""><h2>NEW</h2></a><br><br>
+		<a class="button" href=""><h2>ORIGINAL</h2></a></div>
+		</div>
+		</div>
     <div class="row">
-        <div class="col-sm-1"></div>
-    <div class="col-sm-5 aboutme">
-        <p>
-            Hi!  My name is Vincent Carlino.  I'm a second-year student at Northeastern University majoring in Computer Science and minoring in Music Recording.  I have skills and experience with programming in Java, HTML, CSS, C++, and I am currently teaching myself JavaScript and React Native.  I enjoy computer science because I enjoy solving logical problems and being able to understand how things work below the surface.</p> 
-            <p> I enjoy back-end development because it allows me to have full control over how a program functions for a user.  Additionally, I really enjoy web development and user-interface design.  I believe that the visual design of a program is just as important as its functionality and I love customizing my user experience in a program so that it is both nice to look at and does what it needs to do. </p>
-        </div>
-    <div class="col-sm-5 portrait">
-        <img src="images/Portrait.jpg" width=70%>
-        </div></div>
-</div>
-<div id="projects"class="container-fluid bg-3 text-center">
-  <h2 class="margin">Personal Work</h2><br>
-  <div class="row">
+      <div class="card"><img src="images/startpage.png"></div>
+    </div>
+		<div class="row">
+			<div class="card big"><p>In my Object-Oriented Programming class, a classmate and I were responsible for constructing and implementing a music editor in Java as our final project. The editor is able to read from text files to contruct songs (using the builder pattern) and has a variety of standard music features such as scrub control. The design also includes a playable piano that can add notes.  This project was used to test our knowledge and understanding of a variety of OOP design patterns. It utilizes the Java Swing graphics library for the user interface.</p>
+			<div class="flex-container">
+		<p class="lang">JAVA</p></div>
+		</div>
+			<div class="card title"><h2>Music Editor</h2></div>
+		</div>
+    <div class="row">
+      <div class="card"><img src="images/gui-result.png"></div>
+    </div>
+		<div class="row">
+			<div class="card title"><h2>Responsive Design</h2></div>
+			<div class="card big"><p>Responsive design is the concept that websites should adjust and adapt based on the size of the device they are displayed on.  In the mid-Summer of 2017, I wanted to make an instructional website to teach this idea.  I wrote a simple website that explains the basics of responsive web design in the style of one of my go-to Git references. </p>
+			<div class="flex-container">
+				<p class="lang">HTML/CSS</p>
+				<p class="lang">jQUERY</p>
+			</div></div>
+      <div class="card"><a target=_blank class="button" href="webprojects/rd.html"><h2>HERE</h2></a></div>
+		</div>
     
-    <div class="col-sm-6">
-      <img src="images/MusicEditor.JPG" width=100%>
-    </div>
-      <div class="col-sm-6">
-      <h3>Music Editor</h3>
-      <h4> In my Object-Oriented Programming class, a classmate and I were responsible for constructing and implementing a music editor in Java as our final project.  The editor is able to read from text files to contruct songs (using the builder pattern) and has a variety of standard features such as the ability to add and remove notes from the piece as well as pause/play functionality.  This project was used to test our knowledge and understanding of a variety of OOP design patterns.  It utilizes the Java Swing graphics library for the user interface.     </h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-7">
-      <h3>Project Pedometer</h3>
-      <h4> Project Pedometer is a mobile game that I am currently co-developing with 3 other programmers from my home town.  The game is planned to play like a turn-based RPG that utilizes the pedometer in the mobile device to track and accumulate currency that is used to perform actions in-game. The project is being used as a learning experience by my team to get familiar with programming in React Native. </h4>
-    </div>
-  </div>
-  <div class="row">
-    
-    <div class="col-sm-6">
-      <img src="images/Sp.JPG" width=80%>
-    </div>
-      <div class="col-sm-6" margin-top=30px>
-      <h3>My Startpage</h3>
-        <h4>Startpages are simple HTML files that typically list your most frequently used sites and services.  There is an abundance of startpage templates online that users can tweak to meet their needs.  I constructed <a href="startpage/template.html" target="_blank"> my own startpage </a> with functional dropdown menus and a base color switcher using native JavaScript. This project acted as my introduction to web-design and HTML/CSS and JavaScript.  I loved the process of creating this startpage and I'm still looking to improve its design and functionality.    </h4>  
-    </div>
-  </div>
-</div>
-<div id="experience"class="container-fluid bg-2 text-center">
-  <h2 class="margin">Work Experience</h2>
-  <div class="row">
-    <div class="col-sm-4">
-        <a href="http://library.northeastern.edu/about/mission-quick-facts" target="_blank"><h3>Snell Library</h3></a>
-        <h4>Inter-library Loan Assistant</h4>
-        <h5>October 2015 - Present</h5>
-         <p>At Snell Library, I am responsible for shipping our books to other libraries and schools so that their users can get resources not regularly accessible to them.  Additionally, I'm responsible for navigating a database of electronic articles to find resources that need to be sent via the RapidILL sharing system.</p>
-    </div>
-    <div class="col-sm-4">
-        <a href="https://www.libertymoving.com/about-us/our-mission/" target="_blank"><h3>Liberty Moving and Storage Co.</h3></a>
-        <h4>Operations Assistant</h4>
-        <h5>June 2016 - September 2016</h5>
-         <p>At Liberty Moving, I directed various work crews to assist the process of refurbishing the dormitories of Stony Brook University.  The work varied from large moves (filling a building with furniture) to small maintenance tasks (replacing a broken refrigerator in an occupied residence).  I also took part in teaching new employees proper lifting technique to ensure saftey in the workplace. </p>
-    </div>
-    <div class="col-sm-4">
-        <a href="http://www.stmli.org/" target="_blank">
-      <h3>St. Thomas More Church</h3></a>
-            <h4>Receptionist</h4>
-            <h5>July 2014 - September 2015</h5>
-        <p>At Saint Thomas More, I was responsible for collecting and processing the weekly donations that came to the church.  I utilized church database software to keep track of parish income.  In addition, I was responsible for responding to incoming phone calls.</p>
-    </div>
-  </div>
-</div>
-<div id="art"class="container-fluid bg-3 text-center">
-  <h2 class="margin">Artwork | Design</h2><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="images/Island.PNG" width=50%>
-    </div>
-    <div class="col-sm-4">
-     <img src="images/Mourao.PNG" width=100%>
-    </div>
-    <div class="col-sm-4">
-      <img src="images/CityTriangle.PNG" width=50%>
-    </div>
-  </div>
-    <hr style="width: 50%;">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="images/Map.PNG" width=50%>
-    </div>
-    <div class="col-sm-4">
-      <img src="images/Rose.PNG" width=100%>
-    </div>
-    <div class="col-sm-4">
-      <img src="images/SunBW.PNG" width=50%>
-    </div>
-  </div>
-    <hr style="width: 50%;">
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-      <img src="images/Port.jpg" width=60%>
-    </div>
-    <div class="col-sm-2">
-    </div>
-  </div>
-</div>
-<footer class="container-fluid bg-2 text-center">
-<div class="row">
-    <hr>
-    <div class = "col-sm-12">
-    <h4>
-        
-        </h4>
-    </div>
-    </div>
-</footer>
+		<div class="row">
+		<div class="card big"><p>At the start of 2017, I took an introductory all-day workshop on the basics of web design through Northeastern University's Women in Tech Club.  The workshop explained the basics of HTML and CSS syntax as well the basics of using Bootstrap.  During the few weeks after the course, I had my first website up and running. It relied mostly on my small knowledge of Bootstrap and was very rough around the edges.  Since then, I have taken off the useful training wheels of Bootstrap and moved on to the beautiful world of Flexbox.</p>
+		<div class="flex-container">
+				<p class="lang">HTML/CSS</p>
+				<p class="lang">BOOTSTRAP</p>
+			</div></div>
+		<div class="card title"><h2>Old Personal Site</h2></div>
+		</div>
 
-</body>
-</html>
+		<div class="row">
+		<div id="c" class="card title"><h3>Work Experience</h3></div>
+		</div>
+		<div class="row">
+		<div class="card">
+			<h2>iCorps Technologies</h2>
+			<h4>Network Operation Center Co-op</h4>
+			<p>July 2017 - Present</p><br><p>At iCorps Technologies, I am responsible for supplying remote and on-site technical support and technical consulting for over 500 client companies to help them meet the needs for their business.  The position also requires me to manage various data backup and cloud migration services for these same clients.</p>
+			</div>
+			<div class="card">
+			<h2>Snell Library</h2>
+			<h4>Inter-Library Loan Assistant</h4>
+			<p>October 2015 - Present</p><br><p>At Snell Library, I am responsible for shipping our books to other libraries and schools so that their users can get resources not regularly accessible to them. Additionally, I'm responsible for navigating a database of electronic articles to find resources that need to be sent via the RapidILL sharing system.</p>
+			</div>
+			</div>
+			<div class="row">
+			<div class="card"><h2>Liberty Moving and Storage Co.</h2>
+			<h4>Operations Assistant</h4>
+			<p>June 2016 - September 2016</p><br><p>At Liberty Moving, I directed various work crews to assist the process of refurbishing the dormitories of Stony Brook University. The work varied from large moves (filling a building with furniture) to small maintenance tasks (replacing a broken refrigerator in an occupied residence). I also took part in teaching new employees proper lifting technique to ensure saftey in the workplace.</p>
+			</div>
+			<div class="card">
+				<h2>Saint Thomas More Church</h2>
+			<h4>Receptionist</h4>
+			<p>July 2014 - September 2015</p><br><p>At Saint Thomas More, I was responsible for collecting and processing the weekly donations that came to the church. I utilized church database software to keep track of parish income. In addition, I was responsible for responding to incoming phone calls.</p>
+			</div>
+		</div>
+		<div class="row">
+		<div id="d" class="card"><h3>Art | Design</h3>
+		<p style="color: grey; border-top: solid 1px grey; padding-top: 20px; text-align: center;"">
+			I've enjoyed drawing since I was very young and I firmly believe that my interest in drawing led to my love for web design and engineering.  Below are a few of my more recent drawings and pieces.
+		</p></div>
+		</div>
+		<div class="row arts">
+			<div class="card"><img src="images/Island.png"></div>
+			<div class="card big"><img src="images/Port.jpg"></div>
+		</div>
+		<div class="row arts">
+			<div class="card big"><img src="images/Rose.png"></div>
+			<div class="card"><img src="images/Map.png"></div>
+		</div>
+		<div class="row arts">
+			<div class="card"><img src="images/SunBW.png"></div>
+			<div class="card big"><img src="images/Mourao.png"></div>
+		</div>
+		</div>
+
+		<script type="text/javascript">
+			const nav = document.querySelector('.nav');
+			const card = document.querySelector('.card');
+			const topNav = nav.offsetTop;
+			const topHeight = card.offsetTop
+			function stickyNav(e) {
+				if(window.scrollY >= topNav) {
+					console.log(nav.clientHeight)
+					const off = nav.offsetHeight + nav.clientHeight 
+					document.body.style.paddingTop = topHeight + 'px';
+					document.body.classList.add('fixed-nav');
+				} else {
+					document.body.style.paddingTop = 0;
+					document.body.classList.remove('fixed-nav');
+				}
+			}
+
+			window.addEventListener('scroll', stickyNav);
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Merriweather:300i,400" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src="buttons.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Responsive Design | A Quick Guide</title>
+</head>
+<body>
+<div class="buttons"> <a id="home" href
+="#">-</a>
+</div>
+<div class="title section">
+<div id="border"><h1>Responsive Design</h1></div>
+<p>a quick guide to help you get started with responsive web design</p></div> 
+<div class="opening section">
+<h2>Often, when first learning web design, beginners will lean towards using measurements of 
+pixels in their CSS files.
+</h2><p>When I first began learning web design, I found myself making tiny adjustments in pixels to get my content where I wanted it.  Little did I know, this tweaking only made the site look good on my own display!  Changing computers or switching to a mobile device would completely destroy the look of the site.</p>
+<p>This is because pixels are a hard measurement, meaning that a distance measured in pixels will not
+change whether the viewer's display is large or small.
+Responsive design is a practice in web design that attempts to eliminate the hard coded measurements 
+such as these and replace them with measurements that adapt to the device being used.    </p>
+</div>
+<div class="emandrem section">
+<h2>Enter: Relative Measurements</h2>
+<p>CSS has the ability to utilize relatively sized measurements.  These measurements are called em, rem, and percent.</p>
+<table class="measure">
+  <tr>
+    <td>em</td>
+    <td class="right">Em measures the distance of one default font size for the device.  If the default font size for the browser on your device is 14px,
+	1em will equal to 14px.  Measuring like this allows sizing of objects and elements to be treated more as ratios and less as hard numbers
+	so that no matter how small the device gets, the layout of the page remains roughly the same.
+	</td>
+  </tr>
+  <tr>
+    <td>rem</td>
+    <td class="right">Rem is measured according to the font-size of the html tag.  If you have a font size set in the html section
+of your CSS file, it will be equivalent to 1 rem. Rem is useful in cases where you want to size elements
+consistently over your site. </td>
+  </tr>
+  <tr>
+    <td>percent</td>
+    <td class="right">Percents allow elements and images to be resized based on the size of the parent element.  Percentages can also be used on margins and padding values.
+	This allows the same flexibility of device sizes as does em, but cannot be used on things such as fonts.  </td>
+  </tr>
+</table>
+
+<div class="codeContainer"><pre>p, table{
+  <span class="css-value">font-family</span>: <span class="string">"merriweather"</span>;
+  <span class="css-value">font-weight</span>: <span class="number">300</span>;
+  <span class="css-value">font-size</span>: <span class="number">1.3em</span>;
+  <span class="css-value">width</span>: <span class="number">52%</span>;
+  <span class="css-value">justify-content</span>: <span class="term">center</span>;
+  <span class="css-value">margin</span>: <span class="term">auto</span>;
+  <span class="css-value">padding-bottom</span>: <span class="number">3.5em</span>;
+}</pre></div>
+<p>"This is nice and all, but I have a really small phone!  Content on pages like these wrap infinitely!
+How do you suppose that's fixed?"</p>
+</div>
+<div class="minmax section">
+<h2>Set your Min and Max Width.</h2>
+<p>Minimum and maximum widths can be set for elements so that even when the window is sized too small, 
+the user can scroll left and right on the text rather than having jumbled lines of words.  The same can be done with height!  If you're using a laptop
+or desktop, resize your browser window and see how this paragraph will not become any narrower after a certain width.  </p>
+<div class="codeContainer"><pre>p {
+  <span class="css-value">min-width</span>: <span class="number">300px</span>;
+}</pre></div>
+</div>
+<div class="queries section"><h2>Include All Devices By Using Media Queries</h2>
+<p>Media queries are conditions that a device must meet in order to have a certain style used.  Media queries can be written 
+to require certain minimum and maximum dimensions, resolutions, and display modes. You can probably see how this could be used to specify widths and resolutions 
+of certain devices.  </p><p>Queries can also become a dangerous rabbit hole.  As more and more devices are released every year, dimensions and resolutions become more diverse across
+platforms.  It's probably in your best interest to limit the amount of queries you use. If you are using a desktop or laptop, resize your browser window
+by its width and try to find the point where the query changes the style of the page based on the width of the window.  </p>
+<div class="codeContainer"><pre><span class="css-value">@media only screen</span> and (<span class="css-value">max-width</span>: <span class="number">600px</span>) and (<span class="css-value">min-width</span>: <span class="number">550px</span>) {
+    .queries {
+       <span class="css-value">background-color</span>: <span class="string">black</span>;
+    }
+}</pre></div>
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+     background-color: Khaki;
+	font-family: 'Noto Sans', sans-serif;
+	transition: 0.3s;
+	
+}
+
+li {
+	text-decoration: none;
+}
+
+.dds > li > box{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	background: rgba(0,0,0,0.2);
+	padding: .3em .5em;
+	display: inline-block;
+	margin: .2em;
+
+}
+
+.dds > li {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.dds {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.dropdown {
+	align-content: center;
+	position: absolute;
+	top: 3em;
+	padding: 1em;
+	display: none;
+	opacity: 0;
+	transition: opacity .5s;
+	z-index: 3;
+
+}
+
+.trigger-enter .dropdown {
+    display: block;
+  }
+  .trigger-enter-active .dropdown {
+    opacity: 1;
+  }
+
+.dropdownBackground {
+    width:100px;
+    height:100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    transition:all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+  }
+
+  .dropdownBackground.open {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .arrow {
+    position: absolute;
+    width:10px;
+    height:10px;
+    display: block;
+    background:white;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .dd-item {
+  	text-decoration: none;
+  	margin: .5em;
+  	text-align: center;
+  	font-family: 'Cabin', sans-serif;
+  	font-weight: 600;
+  	font-size: 1.15em;
+  	white-space: nowrap;
+  }
+
+  .facebook {
+  	background-color: #3b5998;
+  	color: white;
+  }
+
+  .twitter {
+  	background-color: #0084b4;
+  }
+
+  .youtube {
+  	background-color: Red;
+  }
+
+  .drive {
+  	background-color: #f4f142;
+  }
+
+  .codecademy {
+  	background-color: #309989;
+  }
+
+  .w3schools {
+  	background-color: #4aba4e;
+  }
+
+  .black {
+  	background-color: #111;
+  }
+
+  .anthers {
+  	background-color: #FF6C60;
+  }
+
+  .reddit {
+  	background-color: #FF5700;
+  }
+
+  a {
+  	line-height: 3em;
+  	text-decoration: none;
+  	color: white;
+  	padding: 2em 3em;
+  }

@@ -1,0 +1,102 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="startpagestyle.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="main">
+<nav class="top">
+    <div class="dropdownBackground">
+     
+    </div>
+	<ul class="dds">
+		<li id='social'>
+		<box >Social</box>
+		<ul class="dropdown">
+		<div class="dd-item facebook"><a href="https://www.facebook.com" target="_blank">Facebook</a></div>
+		<div class="dd-item facebook"><a href="https://www.Messenger.com"target="_blank">Messenger</a></div>
+		<div class="dd-item twitter"><a href="https://www.twitter.com" target="_blank">Twitter</a></div></ul>
+		</li>
+		<li id='prod'>
+		<box>Productivity</box>
+		<ul class="dropdown">
+		<div class="dd-item youtube"><a href="https://www.gmail.com" target="_blank">Mail</a></div>
+		<div class="dd-item drive"><a href="https://www.drive.google.com" target="_blank">Google Drive</a></div>
+		<div class="dd-item w3schools"><a href="https://www.w3schools.com" target="_blank">w3Schools</a></div>
+		<div class="dd-item CodeCademy"><a href="https://www.CodeCademy.com" target="_blank">CodeCademy</a></div>
+		</ul>
+		</li>
+		<li id='neu'>
+		<box>NEU</box>
+		<ul class="dropdown">
+			<div class="dd-item youtube"><a href="https://www.myneu.neu.edu" target="_blank">MyNEU</a></div>
+			<div class="dd-item black"><a href="https://www.blackboard.neu.edu" target="_blank">Blackboard</a></div>
+		</ul>
+		</li>
+		<li id='fun'>
+		<box>Fun</box>
+		<ul class="dropdown">
+			<div class="dd-item youtube"><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
+			<div class="dd-item reddit"><a href="https://www.reddit.com" target="_blank">Reddit</a></div>
+			<div class="dd-item anthers"><a href="https://www.smashladder.com/" target="_blank">Anther's Ladder</a></div>
+		</ul>
+		</li>
+	</ul>
+	</nav>
+
+	<script>
+  const triggers = document.querySelectorAll('.dds > li');
+  const background  = document.querySelector('.dropdownBackground');
+  const nav  = document.querySelector('.top');
+
+  function handleEnter() {
+   
+    switch (this.id) {
+    	case 'social':
+    	document.getElementById('main').style.backgroundColor = "#0084b4";
+    	break;
+    	case 'prod':
+    	document.getElementById('main').style.backgroundColor = "#4aba4e";
+    	break;
+    	case 'neu':
+    	document.getElementById('main').style.backgroundColor = "Red";
+    	break;
+    	case 'fun':
+    	document.getElementById('main').style.backgroundColor = "#FF6C60";
+    	break;
+
+    }
+
+    this.classList.add('trigger-enter');
+    setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+    background.classList.add('open');
+
+    const dropdown = this.querySelector('.dropdown');
+    const dropdownCoords = dropdown.getBoundingClientRect();
+    const navCoords = nav.getBoundingClientRect();
+    const coords = {
+      height: dropdownCoords.height,
+      width: dropdownCoords.width,
+      top: dropdownCoords.top - navCoords.top,
+      left: dropdownCoords.left - navCoords.left
+    };
+
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('height', `${coords.height}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+  }
+  
+  function handleLeave() {
+    this.classList.remove('trigger-enter', 'trigger-enter-active');
+    background.classList.remove('open');
+    document.getElementById('main').style.backgroundColor = "Khaki";
+
+  }
+  triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+  triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+</script>
+</body>
+</html>
