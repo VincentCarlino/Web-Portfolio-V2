@@ -45,6 +45,7 @@ body {
 
 img {
 	max-width: 100%;
+	box-shadow: 11px 11px 12px -8px rgba(0,0,0,0.75);
 }
 
 .nav ul {

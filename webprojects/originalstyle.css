@@ -1,0 +1,151 @@
+* {
+    font-family: "Taviraj";
+    font-weight: 300;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+
+}
+
+img {
+    border-radius: 2%;
+}
+
+
+body{
+    background-color: #2D3142;
+    color: #fff;
+    background-attachment: scroll;
+    line-height: 300%;
+}
+.bg-1 hr {
+    width: 20%;
+    border: solid 1px #fff;
+}
+
+.bg-2 hr {
+    width: 30%;
+    border: solid 1px #2D3142;
+}
+
+#home:hover hr{
+    width: 50%;
+}
+
+#home:hover h3{
+    font-size: 30px;
+}
+
+.margin {
+    
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.startlinks {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-top: 50px;}
+
+.bg-1 {
+    background-color: #2D3142;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    font-size: 120px;
+}
+.bg-2 {
+    background-color: #fff;
+    color: #666;
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.row {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+}
+
+.bg-3 {
+   background-color: #2D3142;
+    color: #eee;
+}
+
+.bg-3 h2, a{
+    color: #d3714d;
+}
+
+.col-sm-4 {
+  padding: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bg-1 .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 50px;
+}
+
+
+
+h4, h3, p { 
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    padding-bottom: 30px
+}
+
+
+
+h4 {
+    padding-bottom: 30px;
+    line-height: 170%;
+}
+.navbar{
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-family: serif;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.navbar-nav  li a:hover {
+    color: #ccc !important;
+    font-size: 14px;
+}
+
+#home {
+    font-size:72px;
+}
+
+h1 {
+    font-family: "Taviraj", serif;
+    font-weight: 100;
+    font-size: 90px;
+}
+
+a {
+    font-family: "Open sans", sans-serif;
+}
