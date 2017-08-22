@@ -144,7 +144,7 @@ a {
 
 .button, .lang, .button:active {
 	color: #fff;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3) !important;
 	text-align: center;
 	width: 9em;
 	border-radius: 150px;
@@ -280,7 +280,6 @@ h4 {
 	.button, .lang, .button:active {
 		min-width: 40%;
 		max-width: 50%;
-		background-color: black;
 	}
 
 	.nav {
