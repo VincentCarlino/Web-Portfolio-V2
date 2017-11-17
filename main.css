@@ -3,6 +3,13 @@ html {
 	transition: all .3s
 }
 
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: yellow; /* Gecko Browsers */
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: #bfe8fc;
