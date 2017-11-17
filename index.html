@@ -50,8 +50,8 @@
 		</div>
 		<div class="row" id="name">
 		<div class="card">
-		<h1>Vincent Carlino</h1>
-		<h2>Web Engineer
+		<h1 class="app">Vincent Carlino</h1>
+		<h2 style= "font-style: italic;">Web Engineer
 		</h2>
 		</div>
 		</div>
@@ -74,26 +74,16 @@
 		</div>
 		<div class="row">
 		<div class="card title"><h2>Startpage</h2></div>
-		<div class="card big"><p>Startpages are HTML files that typically list your most frequently used sites and services. It's common practice to simply run them locally as your homepage for your web browser.  I constructed my own startpage with functional dropdown menus and a base color switcher using native JavaScript in early 2017. This project acted as my introduction to web-design and HTML/CSS and JavaScript. Since then, I've continued to improve my startpage so it now includes more polished animations and visuals.</p><br>
+		<div class="card big"><p>A startpage is a custom webpage that lists your most frequently used sites and services. It's common practice to simply run them locally as your homepage for your web browser.  I constructed my own startpage with functional dropdown menus and a base color switcher using native JavaScript in early 2017. This project acted as my introduction to web-design and HTML/CSS and JavaScript. Since then, I've continued to improve my startpage so it now includes more polished visuals.</p><br>
 		<div class="flex-container">
 		<p class="lang">HTML/CSS</p>
 		<p class="lang">JS</p></div></div>
-		<div class="card">
-		<a class="button" target=_blank href="startpage/startpage.html"><img src="images/Sp.JPG"></a>
-		</div>
 		</div>
     <div class="row">
-      <div class="card"><a target=_blank href="webprojects/startpage.html"><img src="images/startpage.PNG"></a></div>
+    <div class="card">
+    <a target=_blank href="startpage/startpage.html"><img src="images/Sp.JPG"></a>
     </div>
-		<div class="row">
-			<div class="card big"><p>In my Object-Oriented Programming class, a classmate and I were responsible for constructing and implementing a music editor in Java as our final project. The editor is able to read from text files to contruct songs (using the builder pattern) and has a variety of standard music features such as scrub control. The design also includes a playable piano that can add notes.  This project was used to test our knowledge and understanding of a variety of OOP design patterns. It utilizes the Java Swing graphics library for the user interface.</p>
-			<div class="flex-container">
-		<p class="lang">JAVA</p></div>
-		</div>
-			<div class="card title"><h2>Music Editor</h2></div>
-		</div>
-    <div class="row">
-      <div class="card"><a target=_blank href="https://github.com/VincentCarlino/Music-Editor"><img src="images/gui-result.PNG"></a></div>
+      <div class="card"><a target=_blank href="webprojects/startpage.html"><img src="images/startpage.PNG"></a></div>
     </div>
 		<div class="row">
 			<div class="card title"><h2>Responsive Design</h2></div>
@@ -108,6 +98,16 @@
   width: 9em;
   border-radius: 150px;" class="button" href="webprojects/rd.html"><img src="images/prd.PNG"></a></div>
 		</div>
+    <div class="row">
+      <div class="card big"><p>In my Object-Oriented Programming class, a classmate and I were responsible for constructing and implementing a music editor in Java as our final project. The editor is able to read from text files to contruct songs (using the builder pattern) and has a variety of standard music features such as scrub control. The design also includes a playable piano that can add notes.  This project was used to test our knowledge and understanding of a variety of OOP design patterns. It utilizes the Java Swing graphics library for the user interface.</p>
+      <div class="flex-container">
+    <p class="lang">JAVA</p></div>
+    </div>
+      <div class="card title"><h2>Music Editor</h2></div>
+    </div>
+    <div class="row">
+      <div class="card"><a target=_blank href="https://github.com/VincentCarlino/Music-Editor"><img src="images/gui-result.PNG"></a></div>
+    </div>
     
 		<div class="row">
     <div class="card big"><a target=_blank href="webprojects/original.html"><img src="images/originalsite.PNG"></a></div>
@@ -116,7 +116,7 @@
 				<p class="lang">HTML/CSS</p>
 				<p class="lang">BOOTSTRAP</p>
 			</div></div>
-		<div class="card title"><h2>Old Personal Site</h2></div>
+		<div class="card title"><a target=_blank href="webprojects/original.html"><h2>Old Personal Site</h2></a></div>
 		</div>
 
 		<div class="row">
@@ -168,8 +168,22 @@
 			<div class="card big"><a target=_blank href="images/Mourao.PNG"><img src="images/Mourao.PNG"></a></div>
 		</div>
 		</div>
+<script src="typewriter.js"></script>
+	var app = document.getElementById('app');
 
-		<script type="text/javascript">
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hello World!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Strings can be removed')
+    .pauseFor(2500)
+    .deleteChars(7)
+    .typeString('altered!')
+    .start();
+
 			const nav = document.querySelector('.nav');
 			const card = document.querySelector('.card');
 			const topNav = nav.offsetTop;
