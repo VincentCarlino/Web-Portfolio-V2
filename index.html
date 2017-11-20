@@ -180,13 +180,22 @@
     loop: false
 	});
 
-typewriter.typeString('Vincent Calri')
+typewriter.typeString('Vincen')
+    .changeTypingSpeed(150)
     .pauseFor(250)
+    .typeString('t Calri')
     .deleteChars(5)
+    .changeTypingSpeed(50)
     .typeString('Carlio')
-    .pauseFor(200)
-    .deleteChars(1)
-    .typeString('no')
+    .changeDeleteSpeed(1000)
+    .pauseFor(400)
+    .deleteChars(2)
+    .pauseFor(300)
+    .typeString('i')
+    .pauseFor(300)
+    .typeString('n')
+    .pauseFor(400)
+    .typeString('o')
     .start();
 
 			const nav = document.querySelector('.nav');
