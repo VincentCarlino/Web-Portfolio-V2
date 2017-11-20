@@ -5,8 +5,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="typewriter.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type='text/javascript' src="script.js"></script>
+	
 	<title>Vincent Carlino | Web Engineer</title>
 	</head>
 	<body id="body">
@@ -50,7 +52,8 @@
 		</div>
 		<div class="row" id="name">
 		<div class="card">
-		<h1 class="app">Vincent Carlino</h1>
+		<!-- <h1 class="app">Vincent Carlino</h1> -->
+		<h1 id="app"></h1>
 		<h2 style= "font-style: italic;">Web Engineer
 		</h2>
 		</div>
@@ -171,20 +174,20 @@
 
 <script type="text/javascript">
 
-// 	var app = document.getElementById('app');
+	var app = document.getElementById('app');
 
-// 	var typewriter = new Typewriter(app, {
-//     loop: true
-// 	});
+	var typewriter = new Typewriter(app, {
+    loop: false
+	});
 
-// typewriter.typeString('Hello World!')
-//     .pauseFor(2500)
-//     .deleteAll()
-//     .typeString('Strings can be removed')
-//     .pauseFor(2500)
-//     .deleteChars(7)
-//     .typeString('altered!')
-//     .start();
+typewriter.typeString('Vincent Calri')
+    .pauseFor(250)
+    .deleteAll()
+    .typeString('Vinny Carlin')
+    .pauseFor(200)
+    .deleteChars(9)
+    .typeString('cent Carlino')
+    .start();
 
 			const nav = document.querySelector('.nav');
 			const card = document.querySelector('.card');
