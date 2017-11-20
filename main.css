@@ -279,10 +279,13 @@ h4 {
 #name {
 	height: 70vh;
 }
+
+
 @media only screen and (max-width: 700px){
 	.row {
 		flex-direction: column;
 		flex-wrap: nowrap;
+
 	}
 
 	.row > * {
@@ -291,7 +294,10 @@ h4 {
 
 	.row .title {
 		order: 1;
+
 	}
+
+
 
 
 	.button, .lang, .button:active {
@@ -305,6 +311,11 @@ h4 {
 
 	#name .card {
 		display: flex;
+		height: 100%;
+	}
+
+	#name {
+		height: 100%;
 	}
 
 	.card {
