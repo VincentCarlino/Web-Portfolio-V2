@@ -83,7 +83,7 @@
 			animateCursor: true,
 			blinkSpeed: 75,
 			typingSpeed: 'natural',
-			deleteSpeed: 20,
+			deleteSpeed: 80,
 			charSpanClassName: 'typewriter-char',
 			wrapperClassName: 'typewriter-wrapper',
 			loop: false,
