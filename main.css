@@ -181,6 +181,7 @@ h2 {
 	font-size: 2em;
 	font-weight: 300;
 	flex-shrink: 2;
+	margin: 0;
 }
 
 h3 {
