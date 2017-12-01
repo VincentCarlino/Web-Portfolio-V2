@@ -1,0 +1,134 @@
+:root {
+    --base: #5fa2eb;
+}
+
+::selection {
+  background: var(--base); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--base); /* Gecko Browsers */
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	top: 15em;
+	margin: 1em;
+
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	max-width: 75%;
+	
+}
+
+
+h1, p {
+	margin: 2px;
+	color: black;
+}
+
+p{
+	line-height: 1.85;
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1.15;
+}
+
+#page {
+	background-color: var(--base);
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+
+}
+
+.card {
+	box-shadow: -17px -17px 0px 0px rgba(0,0,0,0.16), 0 1px 4px 0 rgba(0,0,0,0.12);
+	padding: 2em;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: .5em;
+    background-color: #fff;
+    flex: 1;
+    transition: all 0.1s;
+}
+
+.card:hover {
+	box-shadow: -20px -20px 0px 0px rgba(0,0,0,0.16);
+}
+
+/*slider and select style*/
+
+.slider {
+    -webkit-appearance: none;
+    margin-top: 2em;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+select, input {
+	margin: 1em;
+	width: 100%;
+	box-shadow: -5px -5px 0px 0px rgba(0,0,0,0.16);
+}
+
+[contenteditable]:focus {
+	outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.flex {
+		flex-direction: column;
+	}
+
+	body {
+		height: auto;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+}
