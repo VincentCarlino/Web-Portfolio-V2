@@ -185,7 +185,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.5em;
+	font-size: 2.9em;
 	font-weight: 300;
 	margin: 0;
 }
@@ -281,6 +281,33 @@ h4 {
 	height: 70vh;
 }
 
+.rowdir {
+	flex-direction: row;	
+}
+
+
+.proj h2{
+	font-size: 1.25em;
+	font-weight: bold;
+	align-self: left;
+	margin-left: 8px;
+}
+
+.proj p {
+	font-size: .8em;
+}
+
+.proj .flex-container {
+	width: 200px;
+}
+
+.proj a {
+	margin: 2em;
+}
+
+.proj .lang {
+	min-width: 5.5em;
+}
 
 @media only screen and (max-width: 700px){
 	.row {
@@ -375,6 +402,8 @@ h4 {
 		position: relative;
 	}
 }
+
+
 
 @media only screen and (max-width: 920px) {
 
